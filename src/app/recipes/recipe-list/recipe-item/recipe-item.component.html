@@ -1,4 +1,8 @@
-<a href="#" class="list-group-item clearfix" (click)="onSelector()">
+<a 
+    style="cursor: pointer"
+    class="list-group-item clearfix"
+    routerLinkActive="list-group-item-info"
+    [routerLink]="[index]">
     <div class="float-start">
         <h4 class="list-group-item-heading">{{recipe.name}}</h4>
         <p class="list-group-item-text">{{recipe.description}}</p>
@@ -11,3 +15,5 @@
             style="max-height: 50px;">
     </span>
 </a>
+
+<!-- list-group-item-info -->
