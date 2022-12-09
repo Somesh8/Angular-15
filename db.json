@@ -1,0 +1,104 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "name": "Dosa",
+      "description": "Made from furmentaed rice and lentilse",
+      "imgPath": "https://i1.wp.com/pixahive.com/wp-content/uploads/2020/09/Indian-Dosa-98502-pixahive.jpg?fit=778%2C518&ssl=1",
+      "ingredients": [
+        {
+          "name": "Rice",
+          "amount": 5
+        },
+        {
+          "name": "Lentils",
+          "amount": 2
+        },
+        {
+          "name": "Potato",
+          "amount": 1
+        },
+        {
+          "name": "Tomato",
+          "amount": 1
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "recipes": [
+    [
+      {
+        "name": "Dosa Wow",
+        "description": "Made from furmentaed rice and lentilse",
+        "imgPath": "https://i1.wp.com/pixahive.com/wp-content/uploads/2020/09/Indian-Dosa-98502-pixahive.jpg?fit=778%2C518&ssl=1",
+        "ingredients": [
+          {
+            "name": "Rice",
+            "amount": 5
+          },
+          {
+            "name": "Lentils",
+            "amount": 2
+          },
+          {
+            "name": "Potato",
+            "amount": 1
+          },
+          {
+            "name": "Tomato",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "name": "Idli Awesome",
+        "description": "Healthy Breakfast option",
+        "imgPath": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Idli_-_A_Traditional_Indian_Food.JPG/1200px-Idli_-_A_Traditional_Indian_Food.JPG?20150610113223",
+        "ingredients": [
+          {
+            "name": "Rice",
+            "amount": 5
+          },
+          {
+            "name": "Lentils",
+            "amount": 2
+          },
+          {
+            "name": "Peas",
+            "amount": 3
+          }
+        ]
+      },
+      {
+        "name": "Puran Poli Ohhh",
+        "description": "Very Sweet dish. Enjoy with Milk and Ghee.",
+        "imgPath": "https://recipes.timesofindia.com/thumb/msid-55045560,width-1600,height-900/55045560.jpg",
+        "ingredients": [
+          {
+            "name": "Chana Dal",
+            "amount": 3
+          },
+          {
+            "name": "Sugar",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

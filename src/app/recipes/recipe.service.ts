@@ -55,6 +55,11 @@ export class RecipeService {
     this.slService.addIngredients(ingredients);
   }
 
+  setRecipe(recipe:[Recipe[]]) {
+    this.recipes = recipe[0];
+    this.recipesChanged.next(this.recipes.slice());
+  }
+  
   addRecipe(recipe:Recipe) {
     this.recipes.push(recipe);
     this.recipesChanged.next(this.recipes.slice());

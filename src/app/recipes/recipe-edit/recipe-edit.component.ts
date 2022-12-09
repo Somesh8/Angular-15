@@ -10,6 +10,7 @@ import { RecipeService } from '../recipe.service';
   styleUrls: ['./recipe-edit.component.css']
 })
 export class RecipeEditComponent implements OnInit {
+
   id: number;
   editMode: boolean = false;
   recipeForm: FormGroup;
@@ -93,6 +94,10 @@ export class RecipeEditComponent implements OnInit {
         ])
       })
     )
+  }
+
+  onDeleteIngredient(index: number) {
+    (<FormArray>this.recipeForm.get('ingredients')).removeAt(index);
   }
 
   onCancel() {

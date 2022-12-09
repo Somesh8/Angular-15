@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-sm bg-light">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a style="cursor: pointer" class="navbar-brand"> Recipe Book</a>
+            <a style="cursor: pointer" class="navbar-brand mb-0 h1"> Recipe Book</a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -13,8 +13,16 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" style="cursor: pointer" role="button" data-bs-toggle="dropdown">Manage</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" style="cursor: pointer">Save Data</a></li>
-                      <li><a class="dropdown-item" style="cursor: pointer">Fetch Data</a></li>
+                      <li><a
+                            class="dropdown-item"
+                            style="cursor: pointer"
+                            (click)="onSaveData()"
+                            >Save Data</a></li>
+                      <li><a 
+                            class="dropdown-item"
+                            style="cursor: pointer"
+                            (click)="onFetchData()"
+                            >Fetch Data</a></li>
                     </ul>
                 </li>
             </ul>
