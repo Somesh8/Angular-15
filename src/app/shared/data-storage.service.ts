@@ -9,7 +9,7 @@ import { RecipeService } from "../recipes/recipe.service";
     providedIn: "root"
 })
 export class DataStarageService {
-   constructor(private http: HttpClient,
+    constructor(private http: HttpClient,
         private recipeService: RecipeService) { }
 
     storeRecipes() {
@@ -26,13 +26,6 @@ export class DataStarageService {
         this.http
             .get<[Recipe[]]>("http://localhost:8888/recipes")
             .subscribe(response => {
-                console.log(response[0]);
-                // return response[0].map(recipe => {
-                //     return {
-                //         ...recipe,
-                //         ingredients : recipe.ingredients ? recipe.ingredients : []
-                //     }
-                // })
                 this.recipeService.setRecipe(response);
             })
     }
