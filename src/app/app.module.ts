@@ -18,12 +18,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RecipeService } from './recipes/recipe.service';
 import { AuthComponent } from './auth/auth.component';
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
-import { SpareComponent } from './spare/spare.component';
+import { CompanyComponent } from './company/company.component';
 import { AuthInterceptorService } from './auth/auth-interceptor.service';
 import { AuthGuard } from './auth/auth.guard';
 import { AlertComponent } from './shared/alert/alert.component';
 import { RecipesModule } from './recipes/recipes.module';
 import { ShoppingListModule } from './shopping-list/shopping-list.module';
+import { CompanyService } from './company/company.service';
+import { CompanyListComponent } from './company/company-list/company-list.component';
+import { KeysPipe } from './shared/pipes/keys.pipes';
 
 @NgModule({
   declarations: [
@@ -31,8 +34,10 @@ import { ShoppingListModule } from './shopping-list/shopping-list.module';
     HeaderComponent,
     AuthComponent,
     LoadingSpinnerComponent,
-    SpareComponent,
-    AlertComponent
+    CompanyComponent,
+    AlertComponent,
+    CompanyListComponent,
+    KeysPipe
   ],
   imports: [
     BrowserModule,
@@ -41,7 +46,7 @@ import { ShoppingListModule } from './shopping-list/shopping-list.module';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ShoppingListService, AuthGuard, RecipeService, {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true}],
+  providers: [ShoppingListService, AuthGuard, CompanyService, RecipeService, {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,7 +4,7 @@ import { Injectable } from "@angular/core";
 import { map } from "rxjs-compat/operator/map";
 import { Recipe } from "../recipes/recipe.model";
 import { RecipeService } from "../recipes/recipe.service";
-import { Company } from "../spare/company.model";
+import { Company } from "../company/company.model";
 
 @Injectable({
     providedIn: "root"

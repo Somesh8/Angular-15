@@ -1,0 +1,24 @@
+<div *ngIf="isLoading">
+  <app-loading-spinner></app-loading-spinner>
+</div>
+
+<table class="table" *ngIf="companies.length > 0; else isEmpty">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Company Name</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr app-company-list
+        *ngFor="let company of companies; let i = index"
+        [company]="company"
+        [index]="i">
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #isEmpty>
+  No Data to Display
+</ng-template>
